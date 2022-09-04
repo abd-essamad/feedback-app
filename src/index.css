@@ -13,6 +13,7 @@ body {
     background-color: rgb(10, 10, 35);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
 
 }
 .container {
@@ -172,6 +173,32 @@ header {
     font-weight: bold;
     
 
+}
+.about {
+    padding: 2rem 2rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin: 4rem;
+}
+.about h1, .about p{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+ 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ margin: 0.5rem;
+}
+.about-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.edit {
+    position: absolute;
+    right: 30px;
+    color: #FF5555;
+    cursor: pointer;
+    background-color: transparent;
+    top: 10px;
+    border: none;
 }
 
 /* media query */

@@ -1,11 +1,12 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import FeedbackContext from "../context/FeedbackContext"
 
 function RatingSelect({select}) {
     const [selected, setSelected] = useState(10)
     const handleChange = (e)=>{
-        setSelected(+e.currentTarget.value);
-        select(+e.currentTarget.value)
-    }
+      setSelected(+e.currentTarget.value);
+      select(+e.currentTarget.value)
+  }
   return (
     <ul className="feedback__select">
         <li >
@@ -13,7 +14,6 @@ function RatingSelect({select}) {
            type="radio" 
            id="num1"
            name="rating"
-           className="active"
            value='1'
            onChange={handleChange}
            checked={selected === 1}
